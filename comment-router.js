@@ -14,7 +14,9 @@ router.get('/:id/comments', async (request, response) => {
     db.findPostComments(request.params.id);
 
     if(comment){
-        response.status(200).json(comment)} else {response.status(404).json({success: false, message:'Comment cannot be found'})}
+        response.status(200).json(comment)
+    } else {
+        response.status(404).json({success: false, message:'Comment cannot be found'})}
 
     }
     catch(err)  {
@@ -25,7 +27,7 @@ router.get('/:id/comments', async (request, response) => {
 
 
 
-router.get('/:id/comments/:id', async (request, response) => {
+router.get('/:id/comments', async (request, response) => {
                
     const id = request.params.id
     
@@ -47,7 +49,7 @@ router.get('/:id/comments/:id', async (request, response) => {
 })
 
 
-router.post('/:id/comments', async (request, response) => {
+router.post('/:id', async (request, response) => {
     const commentInfo = {...request.body, post_id: request.params.id}
    try{
     const comment = await

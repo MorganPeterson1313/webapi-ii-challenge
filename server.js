@@ -6,7 +6,7 @@ const server = express();
 server.use(express.json());
 
 server.use('/api/posts', postsRouter);
-server.use('/api/comments', commentsRouter);
+server.use('/api/posts', commentsRouter);
 
 
 server.get('/', (request, response) => {
