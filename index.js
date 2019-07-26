@@ -1,9 +1,9 @@
-const express = require('express');
 
-const server = express();
-server.use(express.json());
+const server = require('./server');
 
 
+
+// server.use('api/posts', server);
 
 
 
