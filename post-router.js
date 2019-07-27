@@ -87,7 +87,7 @@ router.delete('/:id', async (request, response) => {
     });
 
 
-router.put('/api/posts/:id', async (request, response) => {
+router.put('/:id', async (request, response) => {
             try{
                 const updated = await
             db.update(request.params.id, request.body)
