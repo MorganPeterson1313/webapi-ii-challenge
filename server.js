@@ -7,9 +7,7 @@ server.use(express.json());
 const cors = require('cors')
 server.use(cors())
 
-server.get('/api/posts', function (req, res, next) {
-    res.json({msg: 'This is CORS-enabled for all origins!'})
-  })
+
 
 
 
@@ -24,7 +22,9 @@ response.send('hello world from express');
 });
 
 
-
+server.get('/api/posts', function (req, res, next) {
+    res.json({msg: 'This is CORS-enabled for all origins!'})
+  })
 
 
 module.exports = server;
