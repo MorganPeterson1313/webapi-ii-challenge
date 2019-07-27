@@ -9,12 +9,14 @@ exports.seed = function(knex, Promise) {
           contents: 'Guess who said this',
           thumbnailUrl:'',
           imageUrl:'',
+          likes: 400,
         },
         {
           title: 'I think we should get off the road. Get off the road! Quick!',
           contents: 'Guess who said this',
           thumbnailUrl:'',
           imageUrl:'',
+          likes: 300,
         },
         {
           title:
@@ -22,6 +24,7 @@ exports.seed = function(knex, Promise) {
           contents: 'Guess who said this',
           thumbnailUrl:'',
           imageUrl:'',
+          likes: 200,
         },
         {
           title:
@@ -29,6 +32,7 @@ exports.seed = function(knex, Promise) {
           contents: 'Guess who said this',
           thumbnailUrl:'',
           imageUrl:'',
+          likes: 500,
         },
         {
           title:
@@ -36,6 +40,7 @@ exports.seed = function(knex, Promise) {
           contents: 'Guess who said this',
           thumbnailUrl:'',
           imageUrl:'',
+          likes: 80,
         },
         {
           title:
@@ -43,6 +48,7 @@ exports.seed = function(knex, Promise) {
           contents: 'Guess who said this',
           thumbnailUrl:'',
           imageUrl:'',
+          likes: 700,
         },
         {
           title:
@@ -50,6 +56,7 @@ exports.seed = function(knex, Promise) {
           contents: 'Guess who said this',
           thumbnailUrl:'',
           imageUrl:'',
+          likes: 800,
         },
         {
           title:
@@ -57,6 +64,7 @@ exports.seed = function(knex, Promise) {
           contents: 'Guess who said this',
           thumbnailUrl:'',
           imageUrl:'',
+          likes: 200,
         },
         {
           title:
@@ -64,6 +72,7 @@ exports.seed = function(knex, Promise) {
           contents: 'Guess who said this',
           thumbnailUrl:'',
           imageUrl:'',
+          likes: 400,
         },
       ]);
     });
