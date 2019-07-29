@@ -53,7 +53,7 @@ router.post('/:id', async (request, response) => {
     const commentInfo = {...request.body, post_id: request.params.id}
    try{
     const comment = await
-    db.insert(commentInfo)
+    db.insertComment(commentInfo)
         response.status(201).json({success:true, comment});
     }
     catch(err){
